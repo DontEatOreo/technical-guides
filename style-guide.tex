@@ -1,0 +1,255 @@
+%% style-guide.tex
+%% Copyright 2023 DontEatOreo
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   https://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is DontEatOreo.
+%
+% This work consists of the files example-figure1.jpg and style.sty
+
+\documentclass[12pt]{article}
+
+\input{style.sty}
+
+% ----------REFERENCES----------
+
+\usepackage{biblatex}
+\bibliography{bib/pc-hardware}
+
+% ----------END OF REFERENCES----------
+
+\title{Style Guide for Technical Documentation}
+\author{DontEatOreo}
+\date{10-20-2023}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction}
+
+This style guide aims to help you write a technical guide that is easy to follow and comprehensive. A technical guide is a document that instructs how to use, install, configure, or troubleshoot a product, service, or system. It targets a specific audience who needs to perform certain tasks or solve certain problems with the product, service, or system. This style guide will cover the structure, style, tone, and content of a technical guide, and offer some best practices and tips for writing it well.
+
+\section{General Guidelines}
+
+Before writing a technical guide, you should follow these general guidelines:
+
+\begin{itemize}
+    \item Know your audience: Understand who will read your guide and what they need to know or do. Use language and terminology that suits your audience. Avoid jargon, slang, or acronyms that may confuse or alienate your readers.
+    \item Know your purpose: State the main goal and scope of your guide. What problem are you trying to solve or what task are you trying to help your readers accomplish? Focus on the essential information and avoid irrelevant or unnecessary details.
+    \item Know your product: Test the product, service, or system that you are writing about and verify that it works as expected. Use accurate and up-to-date information and screenshots.
+    \item Know your format: Choose the best format for your guide based on your audience, purpose, and product. You may use different formats for different types of guides, such as manuals, tutorials, quick start guides, FAQs, etc. Use consistent formatting and layout throughout your guide.
+\end{itemize}
+
+\pagebreak
+
+\section{Grammar}
+
+Grammar is an important aspect of writing a technical guide. It affects the clarity, accuracy, and professionalism of your document. You should follow these grammar rules when writing a technical guide:
+
+\begin{itemize}
+    \item Use active voice: Active voice makes your sentences clear and direct. It shows who or what performs an action. For example, "The user clicks the button" is active voice, while "The button is clicked by the user" is passive voice.
+    \item Use present tense: Present tense makes your sentences simple and consistent. It shows that an action is happening now or always. For example, "The system displays a message" is present tense, while "The system will display a message" is future tense.
+    \item Use parallel structure: Parallel structure makes your sentences balanced and coherent. It means using the same grammatical form for items in a list or series. For example, "To install the software, you need to download it, run it, and follow the instructions" is parallel structure, while "To install the software, you need to download it, running it, and instructions should be followed" is not parallel structure.
+    \item Use punctuation correctly: Punctuation marks help you organize your sentences and convey your meaning clearly. You should use them according to the standard rules of grammar. For example, "Don't forget to save your work." is correct punctuation, while "Dont forget to save your work" is incorrect punctuation.
+\end{itemize}
+
+\pagebreak
+
+\section{Margins}
+
+Margins are the gaps that keep your text away from the edges of the page. They make your guide look tidy and easy to read. You should follow these steps to adjust the margins for your guide:
+
+\begin{enumerate}
+    \item Pick the paper size that fits your audience and printer. For example, if you are writing a guide for European readers, use A4 paper (210 x 297 mm). If you are writing a guide for North American readers, use Letter paper (216 x 279 mm).
+    \item Pick the binding method that matches your budget and style. For example, if you want a low-cost and simple binding, use a saddle stitch or a staple. If you want a more sturdy and professional binding, use a spiral or a comb.
+    \item Adjust the left or right margin based on the binding method. For example, if you use a spiral or a comb binding, adjust the left margin to 3.5 cm (1.4 inches) to avoid losing any text. If you use a saddle stitch or a staple, adjust the left margin to 2.5 cm (1 inch).
+    \item Adjust the top, bottom, and outer margins based on the content of your guide. For example, if you use many headings, images, or lists, adjust the top and bottom margins to 3 cm (1.2 inches) to avoid squeezing. If you use many side notes or references, adjust the outer margin to 3 cm (1.2 inches) to avoid covering.
+\end{enumerate}
+
+\pagebreak
+
+\section{Font}
+
+Font is the way the text looks in your document. It affects how easy, clear, and pleasant it is to read your document. You should follow these guidelines to pick the font for your document:
+
+\begin{enumerate}
+    \item Use \textbf{Computer Modern} as the font family for your document. This is a standard font that is made for math and science publications. It has a simple and elegant look that fits different kinds of documents. It also has a lot of symbols and characters that you can use for different purposes.
+    \item Use suitable font sizes for different text elements in your document. The font size decides how big or small the text shows on the page. You should use a font size that is easy to read and matches the hierarchy and importance of the text elements. A common practice is to use \textbf{12 pt} as the base font size for the normal text, and then change the font size for other text elements based on their level and function. For example, you can use \textbf{14 pt} for the headings, \textbf{16 pt} for the title, \textbf{10 pt} for the captions and footnotes, etc. You can tweak the font size a little depending on the paper size and margin settings, but you should avoid using a font size smaller than \textbf{10 pt} or larger than \textbf{18 pt}, as they may be too hard to read or too eye-catching.
+    \item Use different font styles to stress or separate some text elements from others. The font style refers to the shape and weight of the letters and symbols in the font. You can use regular, bold, italic, or bold italic font styles to create contrast or emphasize some words or phrases in your document. For example, you can use regular font style for most of the text elements, such as normal text, captions, footnotes, etc. You can use \textbf{bold} font style for the headings and keywords, italic font style for definitions and examples, and \textbf{\textit{bold italic}} font style for the title and important statements.
+\end{enumerate}
+
+You should not use any other fonts, font sizes, or font styles that are not given in these guidelines. You should also not use any special effects, such as underline, strikeout, shadow, etc., as they may mess up the readability and consistency of your document.
+
+\pagebreak
+
+\section{Headings}
+
+Headings are essential for organizing and structuring your document. They help the reader to follow and comprehend the main themes and subthemes of your document.
+
+\begin{itemize}
+    \item The headings should be informative, brief, and clear. They should use relevant keywords that describe the content of the section or subsection. They should avoid unclear or vague terms.
+    \item The headings should be consistent and coherent throughout the document. They should use the same font, size, color, and capitalization for each level of heading. They should also follow the same grammar and punctuation rules, such as using parallel structure, ending with a period or not, etc.
+    \item The headings should be hierarchical and logical. The main heading should be the most prominent and summarize the main theme of the document. The subheadings should be less prominent and indicate the subthemes or subcategories of the main theme. The sub-subheadings should be even less prominent and indicate the details or aspects of the subthemes. And so on.
+    \item The headings should be numbered or labeled according to a consistent scheme that shows their hierarchy and order. The scheme should use a combination of symbols, such as numbers, letters, or bullets, to distinguish between the levels of headings. For example, one possible scheme is:
+
+          \begin{verbatim}
+            - 1. Main heading
+            - 1.1 Subheading
+                - 1.1.1 Sub-subheading
+                - 1.1.1.a Sub-sub-subheading
+                    - 1.1.1.a.i Sub-sub-sub-subheading
+            - 1.2 Subheading
+            - 2. Main heading
+            - 2.1 Subheading
+                - 2.1.1 Sub-subheading
+            - 2.2 Subheading
+          \end{verbatim}
+
+    \item The headings should be aligned according to their level and indentation. The main heading should be centered and have no indentation. The subheadings should be left-aligned and have a small indentation from the left margin. The sub-subheadings should be left-aligned and have a larger indentation from the left margin. And so on.
+    \item The headings should have appropriate spacing before and after them to separate them from the text and other headings. The spacing should be proportional to the level of heading, with more space for higher-level headings and less space for lower-level headings.
+\end{itemize}
+
+\pagebreak
+
+\section{Bullet points}
+
+Bullet points are used to draw attention to important information within a document so that a reader can identify the key issues and facts quickly. You should use bullet points when you have:
+
+\begin{itemize}
+    \item A number of short points that are of equal importance
+    \item A series of steps or actions that do not need to be in a specific order
+    \item A list of items that are not sentences and do not need full stops
+\end{itemize}
+
+\section{Numbered Lists}
+
+Numbered lists are lists that use numbers (such as 1, 2, 3) to mark each item in the list. They help your readers to identify and organize the key points or steps in your guide. You should use numbered lists when you want to:
+
+\begin{itemize}
+    \item Show the sequence or order of items that are essential for completing a task or achieving a goal. For example, you may use numbered lists to show the steps in a procedure, the stages in a process, the phases in a project, etc.
+    \item Show the hierarchy or subordination of items within a larger category or group. For example, you may use numbered lists to show the sub-steps or sub-sections in a step, the sub-categories or sub-groups in a category or group, etc.
+\end{itemize}
+
+You should follow these guidelines when you create numbered lists:
+
+\begin{itemize}
+    \item Use Arabic numerals (1, 2, 3) for the first level of numbered points.
+    \item Use lowercase letters (a, b, c) for the second level of numbered points.
+    \item Use lowercase Roman numerals (i, ii, iii) for the third level of numbered points.
+    \item Use sentence-style capitalization and punctuation for each numbered point.
+    \item Use parallel grammatical structures and word choices for each numbered point.
+    \item Avoid using more than three levels of numbered points in your guide.
+\end{itemize}
+
+\pagebreak
+
+\section{Tables}
+
+Tables are useful for presenting data or information in a structured and organized way. They can help your readers compare, contrast, or analyze different aspects of your product, service, or system. However, tables can also be confusing or misleading if they are not designed or formatted properly. Therefore, you should follow these guidelines when creating tables for your technical guide:
+
+\begin{itemize}
+    \item Use tables only when necessary: Use them only when they add value or clarity to your guide. Avoid using tables when you can convey the same information with text, lists, or images.
+    \item Use simple and consistent tables: Use simple and consistent tables that are easy to read and understand. Use the same style, font, color, and alignment for all your tables in your guide.
+    \item Use descriptive and concise table titles: Give each table a descriptive and concise title that summarizes its main purpose or content. Place the table title above the table and use a larger or bolder font than the table text. Number your tables sequentially and refer to them by their numbers in your guide.
+    \item Use clear and informative table headers: Use clear and informative table headers that describe the categories or variables of your data or information. Place the table headers in the first row or column of your table and use a different background color or font style than the table text. Align your table headers with the corresponding table cells.
+    \item Use accurate and consistent table data: Use accurate and consistent data or information that supports your guide's goal and scope. Make sure your data or information is relevant, up-to-date, and verified. Use appropriate units, symbols, abbreviations, and decimals for your data or information. Align your data or information with the corresponding table headers.
+\end{itemize}
+
+Here is an example of a table these guidelines:
+
+% Rotate the table by 90 degrees and adjust its size to fit the page width
+\begin{sidewaystable}
+    \begin{adjustbox}{width=\textheight,keepaspectratio}
+        \begin{tabularx}{\textwidth}{@{}lLLl@{}}
+            \toprule
+            \textbf{Product}        & \textbf{Type}     & \textbf{Specification}                                              & \textbf{Price}          \\
+            \midrule
+            Intel Core i9-12900K    & Processor         & 16 cores, 24 threads, up to 5.20 GHz \cite{intel}                   & \euro 455.00            \\
+            AMD Ryzen 9 7900X       & Processor         & 12 cores, 24 threads, up to 4.90 GHz \cite{amd1}                    & \euro 445.00            \\
+            NVIDIA GeForce RTX 4090 & Graphics Card     & 24 GB GDDR6X, 10496 CUDA cores, up to 360 W \cite{nvidia}           & \euro 1999.99           \\
+            AMD Radeon RX 7900 XTX  & Graphics Card     & 16 GB GDDR6, 5120 stream processors, up to 300 W \cite{amd2}        & \euro 1145.00           \\
+            Corsair Vengeance DDR5  & Memory Kit        & 32 GB (2 x 16 GB), 6000 MHz, CL36 \cite{corsair}                    & \euro 130.00            \\
+            G.Skill Trident Z DDR4  & Memory Kit        & 32 GB (2 x 16 GB), 3600 MHz, CL16 \cite{gskill}                     & \euro 169.99            \\
+            Samsung 980 Pro SSD     & Solid State Drive & 2 TB, PCIe Gen4 NVMe M.2, up to 7000 MB/s read speed \cite{samsung} & \euro 125.00            \\
+            Crucial MX500 SSD       & Solid State Drive & 2 TB, SATA III M.2, up to 560 MB/s read speed \cite{crucial}        & \euro 99.99             \\
+            Total Cost Everything   & Everything        & Total Cost of every product combined                                & \euro \textbf{4,579.97} \\
+            \bottomrule
+        \end{tabularx}
+    \end{adjustbox}
+    \caption{A comparison of some PC hardware products based on their type, specification and price.}
+    \label{tab:hardware}
+\end{sidewaystable}
+
+
+\pagebreak
+
+\section{Figures}
+
+Figures are the images, graphs, charts, or diagrams that illustrate your main points or provide additional information. They make your guide more attractive and easier to understand. You should follow these steps to use figures effectively in your guide:
+
+\begin{itemize}
+    \item Position the figure near the text that refers to it. For example, you can place the figure below or above the paragraph that mentions it. You should also avoid splitting the figure across two pages or placing it too far from the relevant text.
+    \item Format the figure according to the style and layout of your document. For example, you can use colors, fonts, labels, legends, titles, and borders that match your document's theme and design. You should also adjust the size and shape of the figure to fit the available space and avoid distortion.
+    \item Number the figure sequentially using Arabic numerals. For example, you can write "Figure 1", "Figure 2", "Figure 3", and so on for your figures. You should also restart the numbering for each chapter or section of your document if applicable.
+    \item Add a caption below the figure that describes its content and source. For example, you can write "Figure 1: Average monthly temperature in Sofia from 2019 to 2023 (Source: National Institute of Meteorology and Hydrology)" as a caption for your figure. You should also use a consistent font and style for your captions and align them with the figure.
+    \item Add a reference for each figure that you cite or quote from another source. For example, if you use a figure from a book, journal article, website, or report, you should provide the author, title, year, and page number of the source in parentheses after the caption.
+\end{itemize}
+
+Here is an example of a figure:
+
+\pagebreak
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/example-figure1.jpg}
+    \caption{A dark blue square} \label{fig:blue}
+\end{figure}
+
+\pagebreak
+
+\section{References}
+
+References are the sources that you cite or quote in your guide. They help your readers to verify and locate the original sources of information that you use in your guide. You should follow these steps to use appropriate references for your guide:
+
+\begin{enumerate}
+    \item Choose the sources that are relevant, consistent, and complete for your guide. For example, if you are writing a guide about a scientific topic, use sources from credible and authoritative sources, such as books, journals, websites, etc. The sources should also be up-to-date and accurate for your guide.
+    \item Choose the citation style and format that matches your audience and purpose. For example, if you are writing a guide for technical and scientific readers, use the APA style (American Psychological Association), which is widely used in technical and scientific writing \cite{apa}.
+    \item Cite the sources in the text using the APA style rules and guidelines. For example, if you are quoting a source directly, use quotation marks and include the author's name, year of publication, and page number in parentheses. If you are paraphrasing a source, use your own words and include the author's name and year of publication in parentheses.
+    \item List the sources in the reference list at the end of your guide using the APA style rules and guidelines. For example, arrange the sources in alphabetical order by the author's last name. Use a hanging indent for each source. Use periods, commas, colons, and parentheses to separate the elements of each source.
+\end{enumerate}
+
+The APA style has specific rules and guidelines for citing different types of sources, such as books, articles, websites, etc. The APA style also has specific rules and guidelines for formatting the reference list, such as alphabetical order, indentation, punctuation, etc. You can find more information about the APA style on their website or in their manual.
+
+\pagebreak
+
+\section{Footnotes}
+
+Footnotes are notes that appear at the bottom of the page that provide additional information or explanation for something in the text. They help your readers to understand or clarify something in your guide without interrupting the flow of the text. You should follow these steps to use appropriate footnotes for your guide:
+
+\begin{enumerate}
+    \item Decide whether you need to use footnotes or not for your guide. For example, if you have essential information or explanation that cannot be included in the text, use footnotes. If you have non-essential information or explanation that can be included in an appendix or a separate document, do not use footnotes.
+    \item Decide what information or explanation you want to provide in each footnote. For example, if you want to provide a definition, an example, a clarification, or a reference for something in the text, use footnotes.
+    \item Insert a footnote number or letter at the end of the sentence that contains the information or explanation that you want to provide in a footnote. Use superscript numbers or letters to indicate footnotes. Start with number 1 or letter a and continue in numerical or alphabetical order throughout your guide.
+    \item Write the footnote at the bottom of the page using the same font size and style as the main text. Use a horizontal line to separate the footnotes from the main text. Start with the footnote number followed by a period and a space. Write the information or explanation in one or two sentences. End with a period.
+\end{enumerate}
+
+\pagebreak
+
+\printbibliography
+
+\end{document}

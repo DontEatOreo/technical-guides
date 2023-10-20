@@ -1,0 +1,130 @@
+%% style.tex
+%% Copyright 2023 DontEatOreo
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   https://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is DontEatOreo.
+
+% Packages that magically make LaTeX better
+\usepackage{microtype}
+
+% For customizing Headers and Footers
+\usepackage{fancyhdr}
+
+% to create footnotes
+\usepackage{footnote}
+
+% ----------MARGINS----------
+
+\usepackage[
+    % letterpaper, % For North American readers
+    a4paper, % For European readers
+    % left=3.5cm, % For spiral or comb binding
+    left=2.5cm, % For saddle stitch or staple binding
+    right=3cm,
+    top=3cm,
+    bottom=3cm
+]{geometry}
+
+% ----------END MARGINS----------
+
+% ----------FONTS----------
+
+% Define the font family as Computer Modern
+\usepackage{lmodern}
+
+% Define the font sizes for different text elements
+\usepackage{anyfontsize}
+\usepackage{sectsty}
+\sectionfont{\fontsize{14}{18}\selectfont}
+\subsectionfont{\fontsize{12}{16}\selectfont}
+\subsubsectionfont{\fontsize{10}{14}\selectfont}
+
+% Define the font styles for different text elements
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\bfseries}{\thesubsubsection}{1em}{}
+
+% ----------END FONTS----------
+
+
+% ----------HEADINGS----------
+
+% Define the font, size, color, and capitalization rules for each level of heading
+\titleformat{\part}[display]{\normalfont\huge\bfseries\centering}{\thepart}{20pt}{\Huge}
+\titleformat{\chapter}[display]{\normalfont\Large\bfseries}{\thechapter}{20pt}{\LARGE}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+% Add more levels of headings as needed
+
+% Define the indentation for each level of heading
+\titlespacing*{\part}{0pt}{50pt}{40pt}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\subsection}{15pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsubsection}{30pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+% Add more levels of headings as needed
+
+% Set the depth of numbering for the headings
+% The default value is 2, which means up to subsections are numbered
+% You can change this value to a higher or lower number as needed
+\setcounter{secnumdepth}{2}
+
+% ----------END HEADINGS----------
+
+% ----------TABLES----------
+
+% For creating tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+% For adjusting the font size of the table
+\usepackage{adjustbox}
+
+% For rotating the table
+\usepackage{rotating}
+
+% For adding captions to the table
+\usepackage{caption}
+
+% Use the € symbol for prices
+\usepackage{eurosym}
+
+% Define a global style for the table
+\newcolumntype{L}{>{\raggedright}X} % This line is commented out because it is not used in your code.
+\setlength{\tabcolsep}{5pt} % This line is commented out because it is not used in your code.
+\renewcommand{\arraystretch}{1.2} % This line is commented out because it is not used in your code.
+\captionsetup[table]{font=small,skip=0pt} % This line is commented out because it is not used in your code.
+
+% ----------END OF TABLES----------
+
+% ----------LISTS----------
+
+% Use the enumitem package to customize the bullet and numbered lists
+\usepackage{enumitem}
+
+\setlist[enumerate,1]{label=\arabic*.,ref=\arabic*}
+\setlist[enumerate,2]{label=\theenumi\alph*.,ref=\theenumi\alph*}
+\setlist[enumerate,3]{label=\theenumii(\roman*),ref=\theenumii(\roman*)}
+
+% ----------END LISTS----------
+
+% Set Footnotes at the bottom
+\usepackage[bottom]{footmisc}
+
+% Add proprer spacing
+\usepackage{parskip}
+
+% For Hyperlinks and Bookmarks
+% You want to load this last
+\usepackage{hyperref}
