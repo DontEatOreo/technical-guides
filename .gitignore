@@ -1,0 +1,40 @@
+# Ignore LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.fls
+*.log
+*.fdb_latexmk
+*.pdf
+*.xml
+*.synctex.gz
+*.bcf
+
+# Ignore output folder
+output/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.swp
+*~
+
+# Ignore folders created by popular IDEs
+.vs/
+.vscode/
+.idea/
